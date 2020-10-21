@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<h2>Interesting things to do Using Js</h2>
+
+
+
+<p>Click On the button to change the cat Image</p>
+
+
+
+<img id="myImage" src="cat.jpg" style="width:100px">
+
+<button id= "btn_id" >Change the image</button>
+
+</body>
+
+<script>
+    var image = document.getElementById('btn_id');
+
+    image.addEventListener('click', function(){
+        changeImage();
+    });
+
+    function changeImage(){
+
+    	document.getElementById('myImage').src='bear.jpg'
+        //image.src = './squid-dab2.gif';
+    }
+</script>
+</html>
